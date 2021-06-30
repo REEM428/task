@@ -1,0 +1,93 @@
+<?php require 'control.php';?>
+<html>
+<head>
+<style>
+ .space {
+  background-color: lightblue;
+  padding: 50px;
+}
+ .p {  text-align: center; } 
+ 
+</style>
+<title>Control</title>
+</head>
+<body>
+
+<div class="space"> 
+</div></p>
+
+
+<div class="p">
+<div class="slidecontainer">
+      <form action="control.php" method="POST"> 
+        <span id="Value1"></span><input type="range" min="0" max="360" value="0" name="engine1" class="slider" id="one" step="90">
+        <label> Engine 1 </label><br><br>
+    
+        <span id="Value2"></span><input type="range" min="0" max="360" value="0" name="engine2" class="slider" id="two" step="90">
+        <label> Engine 2 </label><br><br>
+    
+        <span id="Value3"></span><input type="range" min="0" max="360" value="0" name="engine3" class="slider" id="three" step="90">
+        <label> Engine 3 </label><br><br>
+    
+        <span id="Value4"></span><input type="range" min="0" max="360" value="0" name="engine4" class="slider" id="four" step="90">
+        <label> Engine 4</label><br><br>
+    
+        <span id="Value5"></span><input type="range" min="0" max="360" value="0" name="engine5" class="slider" id="five" step="90">
+        <label> Engine 5</label><br><br>
+    
+        <span id="Value6"></span><input type="range" min="0" max="360" value="0" name="engine6" class="slider" id="six" step="90">
+        <label> Engine 6</label><br><br>
+    
+        <input class="button" type="submit" id="B1" name= "SAVE" value="SAVE "><br><br>
+        <input class="button" type="submit" id="B2" name ="on" value="ON " value = "0">
+      </form>
+    </div>
+</form>
+    </div>
+    
+    <script>
+    var slider = document.getElementById("one");
+    var output1 = document.getElementById("Value1");
+    output1.innerHTML = slider.value;
+    slider.oninput = function() {
+      output1.innerHTML = this.value;
+    }
+    var slider = document.getElementById("two");
+    var output2 = document.getElementById("Value2");
+    output2.innerHTML = slider.value;
+    slider.oninput = function() {
+      output2.innerHTML = this.value;
+    }
+    var slider = document.getElementById("three");
+    var output3 = document.getElementById("Value3");
+    output3.innerHTML = slider.value;
+    slider.oninput = function() {
+      output3.innerHTML = this.value;
+    }
+    var slider = document.getElementById("four");
+    var output4 = document.getElementById("Value4");
+    output4.innerHTML = slider.value;
+    slider.oninput = function() {
+      output4.innerHTML = this.value;
+    }
+    var slider = document.getElementById("five");
+    var output5 = document.getElementById("Value5");
+    output5.innerHTML = slider.value;
+    slider.oninput = function() {
+      output5.innerHTML = this.value;
+    }
+    var slider = document.getElementById("six");
+    var output6 = document.getElementById("Value6");
+    output6.innerHTML = slider.value;
+    slider.oninput = function() {
+      output6.innerHTML = this.value;
+    }
+     
+    </script>
+  
+  </form>
+
+<div class="space"> 
+</div>
+</body>
+</html> 
